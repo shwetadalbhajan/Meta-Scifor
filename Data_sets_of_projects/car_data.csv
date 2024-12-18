@@ -1,0 +1,86 @@
+Brand,Model,Rent Per Hour,Buying Price (INR),Engine Specs,Mileage (km/l),Transmission,Fuel Type,Seating Capacity,Image URL
+Tata,Nexon,900,"7,49,000",1.2L Turbo Petrol,17.4,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80
+Tata,Harrier,2500,"14,80,000",2.0L Kryotec Diesel,16.35,Manual,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/139139/harrier-facelift-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80
+Tata,Altroz,990,"6,35,000",1.2L Revotron Petrol,19.5,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/32597/tata-altroz-exterior-18.jpeg?q=80
+Tata,Safari,2500,"15,45,000",2.0L Kryotec Diesel,14.08,Automatic,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/138895/safari-facelift-exterior-right-front-three-quarter-39.jpeg?isig=0&q=80
+Tata,Tiago,800,"5,54,000",1.2L Revotron Petrol,23.84,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/39345/tiago-exterior-right-front-three-quarter-28.jpeg?isig=0&q=80
+Maruti Suzuki,Swift,700,"5,99,000",1.2L K-Series,22.3,Manual,Petrol,5,https://imgd.aeplcdn.com/370x208/n/pat98db_1738105.jpg?q=80
+Maruti Suzuki,Baleno,750,"6,61,000",1.2L DualJet,22.94,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/102663/baleno-exterior-right-front-three-quarter-66.jpeg?isig=0&q=80
+Maruti Suzuki,Ertiga,900,"8,64,000",1.5L K-Series,20.51,Manual,Petrol,7,https://imgd.aeplcdn.com/370x208/n/d77s93a_1572135.jpg?q=80
+Maruti Suzuki,Dzire,800,"6,51,000",1.2L K-Series,23.26,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/170173/dzire-2024-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Maruti Suzuki,Celerio,600,"5,35,000",1.0L DualJet,24.97,Manual,Petrol,5,https://imgd.aeplcdn.com/370x208/n/staibua_1541101.jpg?q=80
+Kia,Seltos,1000,"10,49,000",1.5L Petrol,20.8,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/174323/seltos-exterior-right-front-three-quarter.jpeg?isig=0&q=80
+Kia,Sonet,800,"7,79,000",1.2L Petrol,18.4,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/174423/sonet-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80
+Kia,Carnival,2900,"30,99,000",2.2L Diesel,14.1,Automatic,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/138947/new-carnival-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Kia,EV6,3000,"60,95,000",Permanent Magnet Motor,505 km (Range),Automatic,Electric,5,https://imgd.aeplcdn.com/370x208/n/t1qop3a_1584561.jpg?q=80
+Kia,Carens,1000,"10,20,000",1.4L Turbo Petrol,16.5,Manual,Petrol,6,https://imgd.aeplcdn.com/664x374/n/cw/ec/174325/carens-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80
+Honda,City,1000,"11,49,000",1.5L i-VTEC,17.8,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/134287/city-exterior-right-front-three-quarter-77.jpeg?isig=0&q=80
+Honda,Amaze,750,"6,89,000",1.2L i-VTEC,18.6,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/184377/amaze-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Honda,WR-V,900,"9,25,000",1.5L i-DTEC,23.7,Manual,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/134113/new-wr-v-exterior-left-front-three-quarter-2.jpeg?isig=0&q=80
+Honda,Jazz,850,"7,77,000",1.2L i-VTEC,16.6,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/46891/jazz-exterior-right-front-three-quarter.jpeg?q=80
+Honda,HR-V,990,"12,00,000",1.8L i-VTEC,15.2,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/34457/cr-v-exterior-right-front-three-quarter.jpeg?q=80
+Mahindra,Thar,1200,"13,59,000",2.2L mHawk Diesel,15.2,Manual,Diesel,4,https://imgd.aeplcdn.com/370x208/n/qy7pp0b_1638615.jpg?q=80
+Mahindra,XUV700,1300,"14,00,000",2.0L Turbo Petrol,16.1,Automatic,Petrol,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Mahindra,Scorpio-N,1000,"12,74,000",2.2L mHawk Diesel,14,Manual,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-47.jpeg?isig=0&q=80
+Mahindra,Bolero Neo,900,"9,63,000",1.5L mHawk Diesel,17.1,Manual,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/131181/bolero-neo-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Mahindra,Marazzo,1100,"13,17,000",1.5L D15 Diesel,17.3,Manual,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/49114/marazzo-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80
+Hyundai,Creta,1100,"10,84,000",1.5L MPi,16.8,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/106815/creta-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80
+Hyundai,Venue,800,"7,77,000",1.0L Turbo Petrol,17.5,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/141113/venue-exterior-right-front-three-quarter-16.jpeg?isig=0&q=80
+Hyundai,i20,600,"6,98,000",1.2L Kappa Petrol,19.7,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/150603/i20-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80
+Hyundai,Tucson,1300,"28,63,000",2.0L CRDi Diesel,16.9,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/106821/tucson-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80
+Hyundai,Verna,900,"9,63,000",1.5L MPi Petrol,18.4,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/121943/verna-exterior-right-front-three-quarter-101.jpeg?isig=0&q=80
+Toyota,Fortuner,1500,"32,59,000",2.8L Turbo Diesel,15,Automatic,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80
+Toyota,Innova Hycross,1300,"18,55,000",2.0L Petrol Hybrid,21.1,Automatic,Hybrid,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/115025/innova-hycross-exterior-right-front-three-quarter-73.jpeg?isig=0&q=80
+Toyota,Glanza,800,"7,46,000",1.2L Petrol,22.9,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/112839/glanza-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80
+Toyota,Camry,1600,"45,25,000",2.5L Hybrid,22.6,Automatic,Hybrid,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/110233/camry-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Toyota,Urban Cruiser,1000,"9,03,000",1.5L Petrol,17.03,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/124027/urban-cruiser-hyryder-exterior-right-front-three-quarter-72.jpeg?isig=0&q=80
+BMW,X1,2000,"45,90,000",2.0L TwinPower Turbo Petrol,15.6,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/140591/x1-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80
+BMW,3 Series,2200,"57,90,000",2.0L TwinPower Turbo Diesel,19.6,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/cw/ec/37067/BMW-3-Series-Exterior-167583.jpg?wm=0&q=80
+BMW,5 Series,2700,"68,90,000",2.0L TwinPower Turbo Diesel,17.42,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/175183/new-5-series-exterior-right-front-three-quarter.jpeg?isig=0&q=80
+BMW,X5,3000,"97,90,000",3.0L TwinPower Turbo Petrol,12.8,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/152681/x5-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80
+BMW,Z4,2900,"71,90,000",3.0L Turbocharged Petrol,12.1,Automatic,Petrol,2,https://imgd.aeplcdn.com/664x374/n/cw/ec/149075/z4-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Mercedes,A-Class Limousine,3000,"45,80,000",2.0L Petrol,15.5,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/149525/a-class-limousine-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80
+Mercedes,E-Class,4000,"88,50,000",3.0L Diesel,14.7,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/162929/e-class-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Mercedes,S-Class,5000,"1,71,90,000",3.0L Petrol,13.4,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/48067/s-class-exterior-right-front-three-quarter-9.jpeg?isig=0&q=80
+Mercedes,GLA,3500,"48,50,000",2.0L Petrol,17,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/169159/gla-facelift-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Mercedes,GLE,3900,"88,00,000",3.0L Diesel,12.7,Automatic,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/163317/gle-facelift-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Skoda,Slavia,1000,"11,29,000",1.0L TSI Petrol,18.7,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/175951/slavia-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80
+Skoda,Kushaq,1000,"11,59,000",1.0L TSI Petrol,17.7,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/175993/kushaq-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Skoda,Octavia,2200,"27,35,000",2.0L TSI Petrol,15.8,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/40371/octavia-exterior-right-front-three-quarter-2.jpeg?q=80
+Skoda,Superb,2900,"34,85,000",2.0L TSI Petrol,15.1,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/158937/superb-exterior-right-front-three-quarter-6.jpeg?isig=0&q=80
+Skoda,Kodiaq,3200,"37,99,000",2.0L TSI Petrol,12.8,Automatic,Petrol,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/49051/kodiaq-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+MG,Hector,1900,"15,00,000",1.5L Turbo Petrol,14.1,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/130583/hector-exterior-right-front-three-quarter-75.jpeg?isig=0&q=80
+MG,Gloster,2000,"32,00,000",2.0L Diesel,12.3,Automatic,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/129689/gloster-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+MG,Astor,1000,"10,82,000",1.5L Petrol,16.2,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/51940/astor-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80
+MG,ZS EV,2500,"22,98,000",Electric Motor,419 km/charge,Automatic,Electric,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/110437/zs-ev-exterior-right-front-three-quarter-69.jpeg?isig=0&q=80
+MG,Comet EV,900,"7,98,000",Electric Motor,230 km/charge,Automatic,Electric,4,https://imgd.aeplcdn.com/664x374/n/cw/ec/125193/comet-ev-exterior-right-front-three-quarter-29.jpeg?isig=0&q=80
+Audi,A4,2000,"43,85,000",2.0L TFSI Petrol,16.5,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/51909/a4-exterior-right-front-three-quarter-2.jpeg?q=80
+Audi,Q5,2700,"61,51,000",2.0L TFSI Petrol,13.5,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/53591/q5-exterior-right-front-three-quarter-36.jpeg?isig=0&q=80
+Audi,A6,2700,"61,60,000",2.0L TFSI Petrol,14.1,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/39472/a6-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Audi,Q7,3000,"93,30,000",3.0L TFSI Petrol,11.2,Automatic,Petrol,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/192279/q7-exterior-right-front-three-quarter.jpeg?isig=0&q=80
+Audi,e-tron,4000,"1,01,00,000",Electric Motor,484 km/charge,Automatic,Electric,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/39045/e-tron-sportback-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Land Rover,Defender,3000,"93,55,000",2.0L Petrol,14,Automatic,Petrol,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/55215/defender-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Land Rover,Discovery Sport,2900,"71,39,000",2.0L Petrol,12.9,Automatic,Petrol,7,https://imgd.aeplcdn.com/664x374/cw/ec/24806/Land-Rover-Discovery-Exterior-104355.jpg?v=201711021421&q=80
+Land Rover,Range Rover Velar,4000,"94,30,000",2.0L Petrol,15.2,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/153319/range-rover-velar-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80
+Land Rover,Range Rover Sport,5000,"1,64,00,000",3.0L Diesel,12,Automatic,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/122451/range-rover-sport-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80
+Land Rover,Evoque,4500,"72,09,000",2.0L Petrol,14.7,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/37721/range-rover-evoque-exterior-right-front-three-quarter.jpeg?isig=0&q=80
+Renault,Kwid,700,"4,70,000",1.0L Petrol,22.3,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/141125/kwid-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Renault,Triber,800,"6,33,000",1.0L Petrol,20.5,Manual,Petrol,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/141119/triber-exterior-right-front-three-quarter-9.jpeg?isig=0&q=80
+Renault,Kiger,860,"6,50,000",1.0L Turbo Petrol,20.3,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/141857/kiger-exterior-right-front-three-quarter-9.jpeg?isig=0&q=80
+Renault,Duster,900,"9,99,000",1.5L Petrol,16.42,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/47028/duster-exterior-right-front-three-quarter-4.jpeg?q=80
+Renault,Captur,900,"9,50,000",1.5L Petrol,13.87,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/cw/ec/39217/Renault-Captur-Right-Front-Three-Quarter-153590.jpg?wm=0&q=80
+Jeep,Compass,1500,"21,09,000",2.0L Diesel,15.5,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/47051/compass-exterior-right-front-three-quarter-75.jpeg?isig=0&q=80
+Jeep,Meridian,2000,"29,90,000",2.0L Diesel,15.1,Automatic,Diesel,7,https://imgd.aeplcdn.com/664x374/n/cw/ec/47139/meridian-exterior-right-front-three-quarter-11.jpeg?isig=0&q=80b
+Jeep,Wrangler,3200,"63,00,000",2.0L Turbo Petrol,10,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/174975/wrangler-facelift-exterior-right-front-three-quarter.jpeg?isig=0&q=80
+Jeep,Grand Cherokee,4100,"77,50,000",2.0L Turbo Petrol,8.5,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/132711/grand-cherokee-exterior-right-front-three-quarter.jpeg?isig=0&q=80
+Jeep,Compass Trailhawk,2500,"30,72,000",2.0L Diesel,14.9,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/47051/compass-exterior-right-front-three-quarter-74.jpeg?isig=0&q=80
+Jaguar,XE,4000,"46,64,000",2.0L Petrol,14.7,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/43356/jaguar-xe-front-right-three-quarter-7.jpeg?q=80
+Jaguar,XF,5000,"71,60,000",2.0L Diesel,19.2,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/19826/xf-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Jaguar,F-Pace,4800,"69,99,000",2.0L Diesel,16.9,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/56265/f-pace-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80
+Jaguar,I-Pace,6000,"1,20,00,000",Electric Motor,470 km/charge,Automatic,Electric,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/39480/i-pace-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80
+Jaguar,F-Type,5800,"99,98,000",5.0L Supercharged Petrol,9.28,Automatic,Petrol,2,https://imgd.aeplcdn.com/664x374/n/cw/ec/46994/f-type-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Volkswagen,Virtus,1700,"11,48,900",1.0L TSI Petrol,18.12,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/144681/virtus-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80
+Volkswagen,Taigun,1800,"11,61,900",1.0L TSI Petrol,18.47,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/144689/taigun-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80
+Volkswagen,Tiguan,2300,"35,17,900",2.0L TSI Petrol,12.65,Automatic,Petrol,5,https://imgd.aeplcdn.com/664x374/n/cw/ec/53123/tiguan-exterior-right-front-three-quarter-4.jpeg?q=80
+Volkswagen,Passat,3000,"25,99,000",2.0L Diesel,17.21,Automatic,Diesel,5,https://imgd.aeplcdn.com/664x374/cw/ec/22548/Volkswagen-Passat-Headlamps-135233.jpg?wm=0&q=80
+Volkswagen,Ameo,990,"5,65,000",1.2L Petrol,19.44,Manual,Petrol,5,https://imgd.aeplcdn.com/664x374/cw/ec/21603/Volkswagen-Ameo-Exterior-119016.jpg?wm=0&q=80
