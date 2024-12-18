@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ffcc70, #f39f86, #f35879, #c056fa);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background-color: rgba(240, 248, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 800px;
+            padding: 30px;
+            color: #333;
+            border: 3px solid #ff7a85;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #c056fa;
+        }
+
+        .question {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            background-color: #ffedda;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        label:hover {
+            background-color: #ffe2c5;
+            border-color: #4a90e2;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 1.1rem;
+            color: white;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 8px;
+            margin-top: 2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #357ab9;
+        }
+
+        .result-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            width: 350px;
+            height: auto;
+        }
+
+        .result-popup p {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>India Quiz</h1>
+        <div id="quiz-container">
+            <div class="question" id="question1">Question 1: What is the capital of India?</div>
+            <div class="options">
+                <label>
+                    <input type="radio" name="answer1" value="New Delhi">
+                    New Delhi
+                </label>
+                <label>
+                    <input type="radio" name="answer1" value="Mumbai">
+                    Mumbai
+                </label>
+                <label>
+                    <input type="radio" name="answer1" value="Kolkata">
+                    Kolkata
+                </label>
+                <label>
+                    <input type="radio" name="answer1" value="Chennai">
+                    Chennai
+                </label>
+            </div>
+
+            <div class="question" id="question2" style="margin-top: 20px;">Question 2: What is the national bird of India?</div>
+            <div class="options">
+                <label>
+                    <input type="radio" name="answer2" value="Peacock">
+                    Peacock
+                </label>
+                <label>
+                    <input type="radio" name="answer2" value="Sparrow">
+                    Sparrow
+                </label>
+                <label>
+                    <input type="radio" name="answer2" value="Eagle">
+                    Eagle
+                </label>
+                <label>
+                    <input type="radio" name="answer2" value="Parrot">
+                    Parrot
+                </label>
+            </div>
+
+            <div class="question" id="question3" style="margin-top: 20px;">Question 3: What is the national game of India?</div>
+            <div class="options">
+                <label>
+                    <input type="radio" name="answer3" value="Hockey">
+                    Hockey
+                </label>
+                <label>
+                    <input type="radio" name="answer3" value="Cricket">
+                    Cricket
+                </label>
+                <label>
+                    <input type="radio" name="answer3" value="Football">
+                    Football
+                </label>
+                <label>
+                    <input type="radio" name="answer3" value="Kabaddi">
+                    Kabaddi
+                </label>
+            </div>
+
+            <button id="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="result-popup" id="result-popup">
+        <p id="result-text"></p>
+        <button class="close-btn" id="close-btn">Close</button>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            answer1: "New Delhi",
+            answer2: "Peacock",
+            answer3: "Hockey"
+        };
+
+        const submitBtn = document.getElementById('submit-btn');
+        const resultPopup = document.getElementById('result-popup');
+        const overlay = document.getElementById('overlay');
+        const closeBtn = document.getElementById('close-btn');
+        const resultText = document.getElementById('result-text');
+
+        submitBtn.addEventListener('click', () => {
+            let score = 0;
+
+            const selectedAnswer1 = document.querySelector('input[name="answer1"]:checked');
+            const selectedAnswer2 = document.querySelector('input[name="answer2"]:checked');
+            const selectedAnswer3 = document.querySelector('input[name="answer3"]:checked');
+
+            if (selectedAnswer1 && selectedAnswer1.value === correctAnswers.answer1) score++;
+            if (selectedAnswer2 && selectedAnswer2.value === correctAnswers.answer2) score++;
+            if (selectedAnswer3 && selectedAnswer3.value === correctAnswers.answer3) score++;
+
+            resultText.textContent = `You scored ${score} out of 3!`;
+            overlay.style.display = 'block';
+            resultPopup.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            resultPopup.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

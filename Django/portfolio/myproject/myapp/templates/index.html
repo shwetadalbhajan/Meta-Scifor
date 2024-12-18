@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shweta Dalbhajan - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; /* Updated font style */
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3; /* Light background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px; /* Wider container for a fuller look */
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #2c3e50; /* Dark Blue */
+            color: #ecf0f1; /* Light Gray */
+            padding: 15px 0; /* Reduced padding */
+            border-bottom: #e67e22 3px solid; /* Bright Orange */
+            position: relative;
+        }
+
+        header a {
+            color: #e67e22; /* Bright Orange */
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header li {
+            padding: 0 20px;
+        }
+
+        header #branding {
+            float: left;
+            margin-left: 20px;
+        }
+
+        header #branding h1 {
+            margin: 0;
+            font-size: 24px; /* Increased font size */
+        }
+
+        .showcase {
+            min-height: 250px; /* Shortened height */
+            background: #2c3e50; /* Dark Blue */
+            color: #ecf0f1; /* Light Gray */
+            text-align: center;
+            padding: 50px 20px; /* Reduced padding */
+            margin-bottom: 20px;
+            display: flex; /* Center content */
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+        }
+
+        .showcase h1 {
+            font-size: 48px; /* Adjusted font size */
+            margin: 0;
+        }
+
+        .showcase p {
+            font-size: 20px; /* Slightly larger text */
+            margin-top: 10px;
+        }
+
+        .section {
+            background: #fff;
+            padding: 30px; /* Increased padding */
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #2c3e50; /* Dark Blue for section headings */
+            font-size: 28px; /* Larger section heading */
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section li {
+            padding: 15px; /* Increased padding */
+            border-bottom: 1px #ccc solid;
+            font-size: 18px; /* Slightly larger text */
+        }
+
+        .section li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background: #2c3e50; /* Dark Blue */
+            color: #ecf0f1; /* Light Gray */
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .showcase h1 {
+                font-size: 36px; /* Smaller font size for smaller screens */
+            }
+
+            .showcase p {
+                font-size: 18px; /* Smaller text for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Shweta Dalbhajan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Aspiring software developer with a passion for coding and problem-solving.</p>
+        </div>
+    </section>
+
+    <section id="profile" class="section">
+        <div class="container">
+            <h2>Profile</h2>
+            <p>A keen student who is always ready to learn and adapt new things. Eager to contribute to a dynamic team and apply my skills to create innovative solutions. Strong collaborator with a focus on delivering high-quality work.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>M.Sc. in Information Technology</strong> - Ramniranjan Jhunjhunwala College (2023-2025, Currently pursuing)</li>
+                <li><strong>B.Sc. in Information Technology</strong> - Ramniranjan Jhunjhunwala College (2020-2023, 9.5 CGPA)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Java Developer Intern</strong> - Oasis Infobyte (Sep 2023 - Oct 2023)</li>
+                <li><strong>Java Developer Intern</strong> - Learnflow Services (Dec 2023 - Jan 2024)</li>
+                <li><strong>UI/UX Tester Intern</strong> - ATG Banao Technologies (Jan 2024 - Present)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> HTML, CSS, JavaScript, C++, C#, Java, Python, SQL</li>
+                <li><strong>Tools:</strong> Visual Studio, Android Studio, VS Code, Power BI</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:shwetadalbhajan02@gmail.com">shwetadalbhajan02@gmail.com</a></p>
+            <p>Phone: <strong>+91 88506 46341</strong></p>
+            <p>Location: <strong>Mumbai, Maharashtra, India</strong></p>
+            <p>LinkedIn: <a href="https://linkedin.com/shwetadalbhajan" target="_blank">linkedin.com/shwetadalbhajan</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Shweta Dalbhajan © 2024</p>
+    </footer>
+</body>
+</html>

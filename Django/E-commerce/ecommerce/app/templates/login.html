@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+            font-family: 'Georgia', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+        h2 {
+            color: #2A3663;
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input {
+            width: 90%;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background: #f0f0f0;
+        }
+        button {
+            font-family: 'Georgia', sans-serif;
+            font-size: 15px;
+            background-color: #2A3663;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #563A9C;
+        }
+        a {
+            text-decoration: none;
+            color: #2A3663;
+        }
+        .message {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+
+        <!-- Display messages here -->
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message {% if message.tags %}{{ message.tags }}{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <br>
+        <a href="{% url 'register' %}">Don't have an account? Register here</a>
+    </div>
+</body>
+</html>

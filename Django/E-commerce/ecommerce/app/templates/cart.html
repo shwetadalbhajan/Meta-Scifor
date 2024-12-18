@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+            width: 95%;
+            max-width: 1200px;
+            gap: 15px;
+            margin: 20px auto;
+            padding-bottom: 20px;
+        }
+        .sidebar-container {
+            width: 280px;
+            background-color: #2A3663;
+            padding: 20px;
+            border-radius: 12px;
+            height: 650px; /* Reduced height to fit laptop screens */
+            overflow-y: auto;
+            margin-bottom: 20px; /* Margin from bottom */
+        }
+        .sidebar-container h2, .sidebar-container a {
+            color: #FEF3E2;
+            text-align: center;
+        }
+        .sidebar-container a {
+            display: block;
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #4a5c82;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .sidebar-container a:hover {
+            background-color: #3a4d6e;
+        }
+        .main-container {
+            flex-grow: 1;
+            background-color: #FEF3E2;
+            padding: 20px;
+            border-radius: 12px;
+            height: 650px; /* Reduced height to fit laptop screens */
+            overflow-y: auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            background-color: #FFF;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cart-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .cart-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .btn-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .btn {
+            background-color: #2A3663;
+            color: #FEF3E2;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            flex: 1;
+        }
+        .btn:hover {
+            background-color: #4a5c82;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar (same as wishlist page) -->
+        <div class="sidebar-container">
+            <h2>Navigation</h2>
+            <a href="{% url 'main' %}">Main Page</a>
+            <a href="{% url 'profile' %}">Profile</a>
+            <a href="{% url 'wishlist' %}">Wishlist</a>
+            <a href="{% url 'orders' %}">Order History</a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">Logout</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>
+            {% endif %}
+        </div>
+
+        <!-- Main Container -->
+        <div class="main-container">
+            <h1>Your Cart</h1>
+            {% if cart_items %}
+                {% for item in cart_items %}
+                <div class="cart-item">
+                    <img src="{{ item.product.image_url }}" alt="{{ item.product.name }}">
+                    <div class="cart-details">
+                        <h3>{{ item.product.name }}</h3>
+                        <p>Quantity: {{ item.quantity }}</p>
+                        <p>Price: ${{ item.product.price }}</p>
+                        <div class="btn-container">
+                            <!-- Remove and Buy Now buttons aligned below the price -->
+                            <form method="post" action="{% url 'remove_from_cart' item.id %}" style="margin: 0;">
+                                {% csrf_token %}
+                                <button class="btn">Remove from Cart</button>
+                            </form>
+                            <form method="post" action="{% url 'checkout' item.id %}" style="margin: 0;">
+                                {% csrf_token %}
+                                <button class="btn">Buy Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p style="text-align: center;">Your cart is empty.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

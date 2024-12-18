@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wishlist</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+        .wrapper {
+            display: flex;
+            width: 98%;
+            max-width: 1400px;
+            height: 90vh;
+            margin: 10px 0;
+            gap: 15px;
+        }
+        .sidebar-container {
+            width: 280px;
+            height: 100%;
+            background-color: #2A3663;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 0;
+        }
+        .sidebar-container h2 {
+            color: #FEF3E2;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .sidebar-container a {
+            display: block;
+            color: #FEF3E2;
+            text-decoration: none;
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #4a5c82;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .sidebar-container a:hover {
+            background-color: #3a4d6e;
+            transform: translateY(-2px);
+        }
+        .main-container {
+            flex-grow: 1;
+            height: 100%;
+            background-color: #FEF3E2;
+            border-radius: 12px;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .products-wrapper {
+            height: calc(100% - 40px);
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        .wishlist-item {
+            background-color: #FFF;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product-details {
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            background-color: #2A3663;
+            color: #FEF3E2;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #4a5c82;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar-container">
+            <h2>EasyShop</h2>
+            <a href="{% url 'main' %}">Main Page</a>
+            <a href="{% url 'profile' %}">Profile</a>
+            <a href="{% url 'cart' %}">Cart</a>
+            <a href="{% url 'orders' %}">Order History</a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">Logout</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>
+            {% endif %}
+        </div>
+
+        <div class="main-container">
+            <h1>Your Wishlist</h1>
+            <div class="products-wrapper">
+                {% for item in wishlist_items %}
+                <div class="wishlist-item">
+                    <img src="{{ item.product.image_url }}" alt="{{ item.product.name }}" class="product-image">
+                    <div class="product-details">
+                        <h3>{{ item.product.name }}</h3>
+                        <p>{{ item.product.description }}</p>
+                        <p class="price">₹{{ item.product.price }}</p>
+                    </div>
+                    <div class="button-group">
+                        <form method="post" action="{% url 'remove_from_wishlist' item.id %}">
+                            {% csrf_token %}
+                            <button class="btn">Remove from Wishlist</button>
+                        </form>
+                        <form method="post" action="{% url 'checkout' item.product.id %}">
+                            {% csrf_token %}
+                            <button class="btn">Buy Now</button>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

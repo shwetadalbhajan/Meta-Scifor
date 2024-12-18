@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+            font-family: 'Georgia', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 700px;
+            height: auto;
+        }
+        h2 {
+            color: #2A3663;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input {
+            width: 80%;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background: #f0f0f0;
+        }
+        button {
+            font-family: 'Georgia', sans-serif;
+            font-size: 18px;
+            background-color: #2A3663;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 80%;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #563A9C;
+        }
+        a {
+            text-decoration: none;
+            color: #2A3663;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .message {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+
+        <!-- Display messages here -->
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message {% if message.tags %}{{ message.tags }}{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone_number" placeholder="Phone Number" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <a href="{% url 'login' %}">Already have an account? Login here</a>
+    </div>
+</body>
+</html>

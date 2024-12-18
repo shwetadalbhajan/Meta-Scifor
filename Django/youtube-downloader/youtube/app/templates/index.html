@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; /* Clean sans-serif for body text */
+            background-color: #f5f5f5; /* Soft light gray background */
+            color: #333; /* Dark text for contrast */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif; /* Elegant serif font for the heading */
+            font-size: 3.5em; /* Larger heading size */
+            margin-bottom: 20px;
+            color: #4A0072; /* Deep purple for the heading */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+        }
+
+        form {
+            background: #ffffff; /* White background for form */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            margin: auto;
+            transition: transform 0.3s;
+        }
+
+        form:hover {
+            transform: translateY(-5px); /* Slight hover effect for the form */
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+            font-weight: bold;
+            color: #555; /* Dark gray for labels */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #4A0072; /* Deep purple border */
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #30005b; /* Darker purple on focus */
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4A0072; /* Deep purple button */
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #30005b; /* Darker purple on hover */
+            transform: translateY(-2px); /* Lift effect on hover */
+        }
+
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #e9ecef; /* Light gray background for messages */
+            color: #333; /* Dark text for messages */
+            border-left: 5px solid #4A0072; /* Deep purple left border */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>YouTube Video Downloader</h1>
+
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="link">Enter Video URL:</label>
+            <input type="text" id="link" name="link" required placeholder="Enter Youtube link">
+            <input type="submit" value="Download">
+        </form>
+
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

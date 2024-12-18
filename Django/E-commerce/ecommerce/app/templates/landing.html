@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+            background-attachment: fixed;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 80px;
+            border-radius: 25px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+            width: 75%;
+        }
+        h2 {
+            font-family: 'Georgia', sans-serif;
+            font-size: 56px;
+            color: #2A3663;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        button {
+            font-family: 'Georgia', sans-serif;
+            font-weight: bold;
+            background-color: #2A3663;
+            color: white;
+            padding: 25px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 24px;
+            margin: 25px;
+            width: 250px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        button:hover {
+            background-color: #563A9C;
+            transform: scale(1.1);
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to EasyShop</h2>
+        <a href="{% url 'login' %}"><button>Login</button></a>
+        <a href="{% url 'register' %}"><button>Register</button></a>
+    </div>
+</body>
+</html>
