@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <!-- Google Fonts for a more aesthetic look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Global Styling */
+        body {
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            font-family: 'Poppins', sans-serif;
+            color: #444;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        /* Enhanced Eye-catching Heading */
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-top: 60px;
+            font-size: 3rem;
+            font-weight: 600;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Animation for Heading */
+        @keyframes headingAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+
+        /* Form Styling */
+        form {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #9b59b6;
+            outline: none;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to right, #1e2a78, #364d92, #3a61c3);
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #3a61c3, #364d92, #1e2a78); /* Reverse gradient on hover */
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            form {
+                padding: 30px;
+                width: 90%;
+            }
+
+            button {
+                font-size: 1rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a New Blog</h1>
+
+    <form action="/create" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="6" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
