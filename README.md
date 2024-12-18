@@ -1,4 +1,4 @@
-Meta Scifor Technologies - Internship Traning.
+# Meta Scifor Technologies - Internship Traning.
 
 This repository is about the work I have done during the trainng period of my internship.
 This traning was all about detailed PYTHON DEVELOPMENT.
