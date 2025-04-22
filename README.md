@@ -16,7 +16,7 @@ Also there are two folder:
 - Mini Projects.
 - Major Project.
 
-These folder contains the porjects I have create using the django framework.
+These folder contains the projects I have create using the django framework.
 The repository of these mini and major project is sepearately available on my account as well. 
 
 Also in this repository I have added the data sets I have used for my project in the folder called:
